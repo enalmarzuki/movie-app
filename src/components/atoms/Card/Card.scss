@@ -1,0 +1,11 @@
+.card {
+  .poster-wrapper {
+    overflow: hidden;
+  }
+
+  .card-body {
+    &:hover {
+      color: rgb(189, 189, 189);
+    }
+  }
+}

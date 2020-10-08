@@ -1,0 +1,68 @@
+.container {
+  // min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+
+  .hero-detail {
+    min-height: 100vh;
+
+    .detail-movie-title {
+    }
+
+    .detail-movie-desc,
+    .detail-movie-genre {
+      font-family: "roboto";
+    }
+
+    .rating-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .detail-movie-genre {
+        flex: 1;
+      }
+      .img-rating {
+        width: 50px;
+      }
+
+      .detail-movie-rating {
+        font-family: "poppins", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        margin: 0;
+      }
+
+      .detail-movie-genre {
+        font-size: small;
+        margin: 0;
+      }
+    }
+
+    .img-wrapper {
+      .img-poster {
+        height: 70%;
+      }
+    }
+  }
+}
+
+.container {
+  .card-wrapper {
+    justify-content: center;
+  }
+  .card-body {
+    .card-text {
+      text-align: center;
+      margin: 15px 0;
+    }
+    .btn-wrap {
+      // width: 0;
+      // height: 0;
+      // overflow: hidden;
+    }
+  }
+}

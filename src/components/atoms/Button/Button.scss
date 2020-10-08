@@ -1,0 +1,19 @@
+div.btn-wrap {
+  display: flex;
+  justify-content: center;
+
+  .btn {
+    font-weight: 600 !important;
+    text-transform: capitalize;
+  }
+
+  .btn.btn-primary {
+    // width: 100%;
+    padding: 10px 40px;
+    border-radius: 30px;
+  }
+
+  .btn-hide {
+    visibility: hidden;
+  }
+}
