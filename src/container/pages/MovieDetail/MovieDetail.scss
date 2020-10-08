@@ -10,9 +10,6 @@
   .hero-detail {
     min-height: 100vh;
 
-    .detail-movie-title {
-    }
-
     .detail-movie-desc,
     .detail-movie-genre {
       font-family: "roboto";
@@ -58,11 +55,6 @@
     .card-text {
       text-align: center;
       margin: 15px 0;
-    }
-    .btn-wrap {
-      // width: 0;
-      // height: 0;
-      // overflow: hidden;
     }
   }
 }

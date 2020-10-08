@@ -20,7 +20,7 @@ function Card({ data, imdmID }) {
       <div className="poster-wrapper">
         <img
           className="card-img-top"
-          src={data.Poster == "N/A" ? notFound : data.Poster}
+          src={data.Poster === "N/A" ? notFound : data.Poster}
           alt="Poster"
         />
       </div>
