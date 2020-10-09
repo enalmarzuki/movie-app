@@ -61,7 +61,7 @@ class MovieDetail extends Component {
         <div className="container">
           <Fade delay={500}>
             <div className="row hero-detail d-flex align-items-center ">
-              <div className="col-md-7 ">
+              <div className="col-md-7 detail-movie-desc">
                 <h1 className="detail-movie-title mb-0">{detailMovie.Title}</h1>
                 <p>{detailMovie.Year}</p>
                 <p className="detail-movie-desc mb-1">{detailMovie.Plot}</p>
@@ -89,7 +89,7 @@ class MovieDetail extends Component {
               <div className="col-md-5 img-wrapper d-flex">
                 <img
                   src={detailMovie.Poster}
-                  className="img-poster ml-auto"
+                  className="img-poster"
                   alt="Poster"
                 />
               </div>
@@ -116,14 +116,14 @@ class MovieDetail extends Component {
               return (
                 <Fade delay={500 * index} key={index}>
                   <div className="col-md-4 my-3">
-                    <Card data={data} isHide={true} />
+                    <Card data={data} />
                   </div>
                 </Fade>
               );
             })}
           </div>
 
-          <Fade delay={1000}>
+          <Fade delay={2300}>
             <div className="row my-5 ">
               <div className="col-md-12">
                 <h2 className="title-detail-movie">Movie Info</h2>
@@ -133,7 +133,7 @@ class MovieDetail extends Component {
 
           <div className="row title-movie-info w-100">
             <div className="col-md-3 content-movie-info">
-              <Fade delay={1200}>
+              <Fade delay={2400}>
                 <table className="table">
                   <tbody>
                     <tr>

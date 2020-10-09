@@ -53,6 +53,8 @@
     }
 
     .img-wrapper {
+      display: flex;
+      justify-content: flex-end;
       .img-poster {
         height: 70%;
       }
@@ -104,6 +106,24 @@
     .card-text {
       text-align: center;
       margin: 15px 0;
+    }
+  }
+}
+
+// Responsif Tablet
+@media (max-width: 768.98px) {
+  .container {
+    .detail-movie-desc {
+      order: 2;
+    }
+
+    .img-wrapper {
+      justify-content: center !important;
+      margin: 30px 0;
+      .img-poster {
+        width: 100%;
+        order: 1;
+      }
     }
   }
 }

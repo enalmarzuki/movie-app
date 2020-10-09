@@ -24,8 +24,6 @@ class LandingPage extends Component {
     } else {
       this.props.KeywordSearch(data);
       await this.props.getMovie("s", data);
-      // console.log(data);
-      // console.log(movie.Search);
       this.props.history.push("/movie-page");
     }
   };

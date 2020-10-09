@@ -14,15 +14,12 @@ class MoviePage extends Component {
 
   getImdbId = async (id) => {
     this.props.keyImdbId(id);
-    const detailMovie = await this.props.getMovieDetail("i", id);
-    console.log("Detail Movie", detailMovie);
+    await this.props.getMovieDetail("i", id);
     this.props.history.push(`/movie-detail/${id}`);
   };
 
   render() {
-    // console.log(this.props);
     const { keySearch, history, movies } = this.props;
-    // console.log(movies);
     if (keySearch === "") {
       return (
         <Fade delay={300}>
